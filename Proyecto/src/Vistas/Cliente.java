@@ -39,7 +39,7 @@ public class Cliente extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jtReservacion = new javax.swing.JTable();
+        jtCliente = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         lblnombreC = new javax.swing.JLabel();
         lblCodigoCliente = new javax.swing.JLabel();
@@ -76,7 +76,7 @@ public class Cliente extends javax.swing.JFrame {
         jPanel1.setBackground(new Color(55, 55, 55, 20));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jtReservacion.setModel(new javax.swing.table.DefaultTableModel(
+        jtCliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -87,7 +87,7 @@ public class Cliente extends javax.swing.JFrame {
 
             }
         ));
-        jScrollPane1.setViewportView(jtReservacion);
+        jScrollPane1.setViewportView(jtCliente);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,11 +102,11 @@ public class Cliente extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
                 .addGap(5, 5, 5))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 700, 280));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 700, 290));
 
         lblnombreC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         lblnombreC.setText("Nombre");
@@ -316,7 +316,7 @@ public class Cliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JTable jtReservacion;
+    private javax.swing.JTable jtCliente;
     private javax.swing.JTextField jtfApellidoM;
     private javax.swing.JTextField jtfApellidoP;
     private javax.swing.JTextField jtfDireccion;

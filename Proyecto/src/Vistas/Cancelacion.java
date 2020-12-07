@@ -39,7 +39,7 @@ public class Cancelacion extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jtReservacion = new javax.swing.JTable();
+        jtCancelacion = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         lblFIngresoC = new javax.swing.JLabel();
         jftfIngresoC = new javax.swing.JFormattedTextField();
@@ -76,7 +76,7 @@ public class Cancelacion extends javax.swing.JFrame {
         jPanel1.setBackground(new Color(55, 55, 55, 20));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jtReservacion.setModel(new javax.swing.table.DefaultTableModel(
+        jtCancelacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -87,7 +87,7 @@ public class Cancelacion extends javax.swing.JFrame {
 
             }
         ));
-        jScrollPane1.setViewportView(jtReservacion);
+        jScrollPane1.setViewportView(jtCancelacion);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,11 +102,11 @@ public class Cancelacion extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
                 .addGap(5, 5, 5))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 700, 230));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 700, 250));
 
         lblFIngresoC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         lblFIngresoC.setText("Fecha de Ingreso (DD/MM/AAAA)");
@@ -337,7 +337,7 @@ public class Cancelacion extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JFormattedTextField jftfFSalidaC;
     private javax.swing.JFormattedTextField jftfIngresoC;
-    private javax.swing.JTable jtReservacion;
+    private javax.swing.JTable jtCancelacion;
     private javax.swing.JTextField jtfMontoC;
     private javax.swing.JLabel lblCantidadPersonasC;
     private javax.swing.JLabel lblCodigoCancelacion;
