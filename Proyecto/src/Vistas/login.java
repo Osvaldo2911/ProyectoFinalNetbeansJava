@@ -62,6 +62,11 @@ public class login extends javax.swing.JFrame {
 
         btnIniciarSesion.setText("Iniciar Sesion");
         btnIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        btnIniciarSesion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnIniciarSesionMousePressed(evt);
+            }
+        });
 
         lblLogoGolden.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         lblLogoGolden.setForeground(new java.awt.Color(204, 204, 0));
@@ -105,6 +110,12 @@ public class login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnIniciarSesionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIniciarSesionMousePressed
+        Principal pri = new Principal();
+        pri.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnIniciarSesionMousePressed
 
     /**
      * @param args the command line arguments
