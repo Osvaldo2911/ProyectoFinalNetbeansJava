@@ -79,6 +79,7 @@
               <Color blue="d7" green="78" id="Text Highlight" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Crear cuenta"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblCrearCuentaMousePressed"/>

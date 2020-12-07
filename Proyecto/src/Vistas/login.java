@@ -53,6 +53,7 @@ public class login extends javax.swing.JFrame {
 
         lblCrearCuenta.setForeground(java.awt.SystemColor.textHighlight);
         lblCrearCuenta.setText("Crear cuenta");
+        lblCrearCuenta.setFocusable(false);
         lblCrearCuenta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lblCrearCuentaMousePressed(evt);
