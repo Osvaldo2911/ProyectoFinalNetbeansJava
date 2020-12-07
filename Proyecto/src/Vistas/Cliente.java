@@ -132,7 +132,7 @@ public class Cliente extends javax.swing.JFrame {
         lbltituloCliente.setText("Cliente");
 
         btnReservar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        btnReservar.setText("Reservar");
+        btnReservar.setText("Registrar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
