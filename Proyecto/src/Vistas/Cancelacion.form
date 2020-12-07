@@ -199,31 +199,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnReservarA" max="32767" attributes="0"/>
+                  <Component id="btnReservarC" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="lblTituloReservacionA" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTituloReservacionC" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
-                  <Component id="lblCodigoActualizacion" min="-2" pref="125" max="-2" attributes="0"/>
+                  <Component id="lblCodigoCancelacion" min="-2" pref="125" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="lblFIngresoA" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jftfIngresoA" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jftfFSalidaA" alignment="1" max="32767" attributes="0"/>
-                      <Component id="lblfSalidaA" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblMontoA" min="-2" pref="58" max="-2" attributes="0"/>
-                      <Component id="jtfMontoA" alignment="0" min="-2" pref="240" max="-2" attributes="0"/>
+                      <Component id="lblFIngresoC" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jftfIngresoC" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jftfFSalidaC" alignment="1" max="32767" attributes="0"/>
+                      <Component id="lblfSalidaC" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblMontoC" min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="jtfMontoC" alignment="0" min="-2" pref="240" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="lblTipoHabitacionA" alignment="0" max="32767" attributes="0"/>
-                      <Component id="cbpersonasA" alignment="0" max="32767" attributes="0"/>
-                      <Component id="lblCantidadPersonasA" alignment="1" max="32767" attributes="0"/>
-                      <Component id="cbHabitacionA" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                      <Component id="lblTipoHabitacionC" alignment="0" max="32767" attributes="0"/>
+                      <Component id="cbpersonasC" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblCantidadPersonasC" alignment="1" max="32767" attributes="0"/>
+                      <Component id="cbHabitacionC" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="151" max="32767" attributes="0"/>
               </Group>
@@ -234,44 +234,44 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblTituloReservacionA" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCodigoActualizacion" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="lblTituloReservacionC" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCodigoCancelacion" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblCantidadPersonasA" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCantidadPersonasC" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblFIngresoA" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFIngresoC" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jftfIngresoA" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbpersonasA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jftfIngresoC" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbpersonasC" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblfSalidaA" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTipoHabitacionA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblfSalidaC" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTipoHabitacionC" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jftfFSalidaA" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbHabitacionA" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jftfFSalidaC" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbHabitacionC" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblMontoA" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMontoC" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jtfMontoA" min="-2" max="-2" attributes="0"/>
+                  <Component id="jtfMontoC" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="btnReservarA" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnReservarC" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="22" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lblFIngresoA">
+        <Component class="javax.swing.JLabel" name="lblFIngresoC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -279,7 +279,7 @@
             <Property name="text" type="java.lang.String" value="Fecha de Ingreso (DD/MM/AAAA)"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="jftfIngresoA">
+        <Component class="javax.swing.JFormattedTextField" name="jftfIngresoC">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
@@ -287,7 +287,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblCodigoActualizacion">
+        <Component class="javax.swing.JLabel" name="lblCodigoCancelacion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -301,7 +301,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblfSalidaA">
+        <Component class="javax.swing.JLabel" name="lblfSalidaC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -309,7 +309,7 @@
             <Property name="text" type="java.lang.String" value="Fecha de Salida (DD/MM/AAAA)"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="jftfFSalidaA">
+        <Component class="javax.swing.JFormattedTextField" name="jftfFSalidaC">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
@@ -317,7 +317,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblCantidadPersonasA">
+        <Component class="javax.swing.JLabel" name="lblCantidadPersonasC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -325,7 +325,7 @@
             <Property name="text" type="java.lang.String" value="Cantidad de personas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="cbpersonasA">
+        <Component class="javax.swing.JComboBox" name="cbpersonasC">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -342,7 +342,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblTipoHabitacionA">
+        <Component class="javax.swing.JLabel" name="lblTipoHabitacionC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -350,7 +350,7 @@
             <Property name="text" type="java.lang.String" value="Tipo de habitacion"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="cbHabitacionA">
+        <Component class="javax.swing.JComboBox" name="cbHabitacionC">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -367,7 +367,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblTituloReservacionA">
+        <Component class="javax.swing.JLabel" name="lblTituloReservacionC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="24" style="0"/>
@@ -375,7 +375,7 @@
             <Property name="text" type="java.lang.String" value="Cancelacion"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReservarA">
+        <Component class="javax.swing.JButton" name="btnReservarC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -383,7 +383,7 @@
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblMontoA">
+        <Component class="javax.swing.JLabel" name="lblMontoC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="12" style="0"/>
@@ -391,7 +391,7 @@
             <Property name="text" type="java.lang.String" value="Monto"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jtfMontoA">
+        <Component class="javax.swing.JTextField" name="jtfMontoC">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>

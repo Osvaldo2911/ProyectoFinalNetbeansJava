@@ -41,19 +41,19 @@ public class Cancelacion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jtReservacion = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
-        lblFIngresoA = new javax.swing.JLabel();
-        jftfIngresoA = new javax.swing.JFormattedTextField();
-        lblCodigoActualizacion = new javax.swing.JLabel();
-        lblfSalidaA = new javax.swing.JLabel();
-        jftfFSalidaA = new javax.swing.JFormattedTextField();
-        lblCantidadPersonasA = new javax.swing.JLabel();
-        cbpersonasA = new javax.swing.JComboBox<>();
-        lblTipoHabitacionA = new javax.swing.JLabel();
-        cbHabitacionA = new javax.swing.JComboBox<>();
-        lblTituloReservacionA = new javax.swing.JLabel();
-        btnReservarA = new javax.swing.JButton();
-        lblMontoA = new javax.swing.JLabel();
-        jtfMontoA = new javax.swing.JTextField();
+        lblFIngresoC = new javax.swing.JLabel();
+        jftfIngresoC = new javax.swing.JFormattedTextField();
+        lblCodigoCancelacion = new javax.swing.JLabel();
+        lblfSalidaC = new javax.swing.JLabel();
+        jftfFSalidaC = new javax.swing.JFormattedTextField();
+        lblCantidadPersonasC = new javax.swing.JLabel();
+        cbpersonasC = new javax.swing.JComboBox<>();
+        lblTipoHabitacionC = new javax.swing.JLabel();
+        cbHabitacionC = new javax.swing.JComboBox<>();
+        lblTituloReservacionC = new javax.swing.JLabel();
+        btnReservarC = new javax.swing.JButton();
+        lblMontoC = new javax.swing.JLabel();
+        jtfMontoC = new javax.swing.JTextField();
         mbPricipal = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -108,53 +108,53 @@ public class Cancelacion extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 700, 230));
 
-        lblFIngresoA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblFIngresoA.setText("Fecha de Ingreso (DD/MM/AAAA)");
+        lblFIngresoC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblFIngresoC.setText("Fecha de Ingreso (DD/MM/AAAA)");
 
-        jftfIngresoA.setEditable(false);
+        jftfIngresoC.setEditable(false);
         try {
-            jftfIngresoA.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+            jftfIngresoC.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
-        lblCodigoActualizacion.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblCodigoActualizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCodigoActualizacion.setText("1003050001");
-        lblCodigoActualizacion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        lblCodigoCancelacion.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblCodigoCancelacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCodigoCancelacion.setText("1003050001");
+        lblCodigoCancelacion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        lblfSalidaA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblfSalidaA.setText("Fecha de Salida (DD/MM/AAAA)");
+        lblfSalidaC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblfSalidaC.setText("Fecha de Salida (DD/MM/AAAA)");
 
-        jftfFSalidaA.setEditable(false);
+        jftfFSalidaC.setEditable(false);
         try {
-            jftfFSalidaA.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+            jftfFSalidaC.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
-        lblCantidadPersonasA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblCantidadPersonasA.setText("Cantidad de personas");
+        lblCantidadPersonasC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblCantidadPersonasC.setText("Cantidad de personas");
 
-        cbpersonasA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "1", "2", "3", "4" }));
-        cbpersonasA.setEnabled(false);
+        cbpersonasC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "1", "2", "3", "4" }));
+        cbpersonasC.setEnabled(false);
 
-        lblTipoHabitacionA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblTipoHabitacionA.setText("Tipo de habitacion");
+        lblTipoHabitacionC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblTipoHabitacionC.setText("Tipo de habitacion");
 
-        cbHabitacionA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione ...", "Simple", "Doble", "Familiar", "Residencial" }));
-        cbHabitacionA.setEnabled(false);
+        cbHabitacionC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione ...", "Simple", "Doble", "Familiar", "Residencial" }));
+        cbHabitacionC.setEnabled(false);
 
-        lblTituloReservacionA.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
-        lblTituloReservacionA.setText("Cancelacion");
+        lblTituloReservacionC.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        lblTituloReservacionC.setText("Cancelacion");
 
-        btnReservarA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        btnReservarA.setText("Cancelar");
+        btnReservarC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        btnReservarC.setText("Cancelar");
 
-        lblMontoA.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblMontoA.setText("Monto");
+        lblMontoC.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblMontoC.setText("Monto");
 
-        jtfMontoA.setEditable(false);
+        jtfMontoC.setEditable(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -162,28 +162,28 @@ public class Cancelacion extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnReservarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnReservarC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTituloReservacionA)
+                .addComponent(lblTituloReservacionC)
                 .addGap(128, 128, 128)
-                .addComponent(lblCodigoActualizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblCodigoCancelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(151, 151, 151)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblFIngresoA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jftfIngresoA)
-                    .addComponent(jftfFSalidaA, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblfSalidaA)
-                    .addComponent(lblMontoA, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfMontoA, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblFIngresoC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jftfIngresoC)
+                    .addComponent(jftfFSalidaC, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblfSalidaC)
+                    .addComponent(lblMontoC, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtfMontoC, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(lblTipoHabitacionA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cbpersonasA, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblCantidadPersonasA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cbHabitacionA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTipoHabitacionC, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cbpersonasC, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCantidadPersonasC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cbHabitacionC, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(151, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -191,31 +191,31 @@ public class Cancelacion extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTituloReservacionA)
-                    .addComponent(lblCodigoActualizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblTituloReservacionC)
+                    .addComponent(lblCodigoCancelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCantidadPersonasA)
+                    .addComponent(lblCantidadPersonasC)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblFIngresoA)
+                        .addComponent(lblFIngresoC)
                         .addGap(4, 4, 4)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftfIngresoA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cbpersonasA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jftfIngresoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbpersonasC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblfSalidaA)
-                            .addComponent(lblTipoHabitacionA))
+                            .addComponent(lblfSalidaC)
+                            .addComponent(lblTipoHabitacionC))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftfFSalidaA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cbHabitacionA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jftfFSalidaC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbHabitacionC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblMontoA)))
+                        .addComponent(lblMontoC)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jtfMontoA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfMontoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
-                .addComponent(btnReservarA)
+                .addComponent(btnReservarC)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -316,9 +316,9 @@ public class Cancelacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnReservarA;
-    private javax.swing.JComboBox<String> cbHabitacionA;
-    private javax.swing.JComboBox<String> cbpersonasA;
+    private javax.swing.JButton btnReservarC;
+    private javax.swing.JComboBox<String> cbHabitacionC;
+    private javax.swing.JComboBox<String> cbpersonasC;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu5;
@@ -335,17 +335,17 @@ public class Cancelacion extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JFormattedTextField jftfFSalidaA;
-    private javax.swing.JFormattedTextField jftfIngresoA;
+    private javax.swing.JFormattedTextField jftfFSalidaC;
+    private javax.swing.JFormattedTextField jftfIngresoC;
     private javax.swing.JTable jtReservacion;
-    private javax.swing.JTextField jtfMontoA;
-    private javax.swing.JLabel lblCantidadPersonasA;
-    private javax.swing.JLabel lblCodigoActualizacion;
-    private javax.swing.JLabel lblFIngresoA;
-    private javax.swing.JLabel lblMontoA;
-    private javax.swing.JLabel lblTipoHabitacionA;
-    private javax.swing.JLabel lblTituloReservacionA;
-    private javax.swing.JLabel lblfSalidaA;
+    private javax.swing.JTextField jtfMontoC;
+    private javax.swing.JLabel lblCantidadPersonasC;
+    private javax.swing.JLabel lblCodigoCancelacion;
+    private javax.swing.JLabel lblFIngresoC;
+    private javax.swing.JLabel lblMontoC;
+    private javax.swing.JLabel lblTipoHabitacionC;
+    private javax.swing.JLabel lblTituloReservacionC;
+    private javax.swing.JLabel lblfSalidaC;
     private javax.swing.JMenuBar mbPricipal;
     // End of variables declaration//GEN-END:variables
 }
