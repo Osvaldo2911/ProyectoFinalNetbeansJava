@@ -54,6 +54,11 @@ public class Registro extends javax.swing.JFrame {
 
         lblCrearCuenta.setForeground(java.awt.SystemColor.textHighlight);
         lblCrearCuenta.setText("Iniciar Sesion");
+        lblCrearCuenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblCrearCuentaMousePressed(evt);
+            }
+        });
 
         jtfUsuario.setText("Usuario");
 
@@ -108,6 +113,12 @@ public class Registro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblCrearCuentaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCrearCuentaMousePressed
+        login in = new login();
+        in.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_lblCrearCuentaMousePressed
 
     /**
      * @param args the command line arguments

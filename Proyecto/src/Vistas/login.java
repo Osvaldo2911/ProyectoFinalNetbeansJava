@@ -53,6 +53,11 @@ public class login extends javax.swing.JFrame {
 
         lblCrearCuenta.setForeground(java.awt.SystemColor.textHighlight);
         lblCrearCuenta.setText("Crear cuenta");
+        lblCrearCuenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblCrearCuentaMousePressed(evt);
+            }
+        });
 
         jtfUsuario.setText("Usuario");
         jtfUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -116,6 +121,12 @@ public class login extends javax.swing.JFrame {
         pri.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnIniciarSesionMousePressed
+
+    private void lblCrearCuentaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCrearCuentaMousePressed
+        Registro r = new Registro();
+        r.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_lblCrearCuentaMousePressed
 
     /**
      * @param args the command line arguments
