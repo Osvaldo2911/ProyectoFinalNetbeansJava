@@ -23,7 +23,7 @@ public class Registro extends javax.swing.JFrame {
         iconoEnBD();
     }
     public void iconoEnBD(){      
-        URL url = getClass().getResource("/Recursos/icono.png"); 
+        URL url = getClass().getResource("/Recursos/figura.png"); 
         ImageIcon icono = new ImageIcon(url);  
         setIconImage(icono.getImage()); 
     }
