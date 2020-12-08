@@ -1,30 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Conexion;
 
-/**
- *
- * @author osval
- */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-/**
- * @web https://www.jc-mouse.net
- * @author Mouse
- */
+
 public class SQLite_Conexion {
 
     private Connection connection = null;
     private ResultSet resultSet = null;
     private Statement statement = null;
-    private String db= "E:\\dbSQLite\\dbTest.sqlite";    
+    private String db= "C:\\Users\\osval\\Documents\\Proyecto\\Java\\ProyectoFinal\\Hotel.db";    
 
 //Constructor de clase que se conecta a la base de datos SQLite 
     public SQLite_Conexion()

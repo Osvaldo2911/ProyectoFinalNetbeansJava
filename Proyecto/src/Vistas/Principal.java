@@ -41,6 +41,7 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jtActividades = new javax.swing.JTable();
         lblLogo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         mbPricipal = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
@@ -98,6 +99,9 @@ public class Principal extends javax.swing.JFrame {
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/logoprincipal.png"))); // NOI18N
         getContentPane().add(lblLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 0, 400, 250));
+
+        jLabel1.setText("Usuario Name");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(564, 0, 150, -1));
 
         jMenu1.setText("Inicio");
 
@@ -191,6 +195,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu5;
