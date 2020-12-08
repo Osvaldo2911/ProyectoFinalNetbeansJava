@@ -1,21 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package proyecto;
 
-/**
- *
- * @author osval
- */
+import Conexion.SQLite_Conexion;
+
+
+
+
 public class Proyecto {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       
+        //Se crea instancia a objeto y se conecta a SQLite
+        SQLite_Conexion fbc = new SQLite_Conexion();
+        //Se insertan algunos datos
+        fbc.insert("persona", " nombre, apellido ", " 'Charly', 'Manson' ");
+        fbc.insert("persona", " nombre, apellido ", " 'Marilyn' , 'Garcia' ");
+        fbc.insert("persona", " nombre, apellido ", " 'Marcelo', 'Chamboneti' ");
+        //Se imprimen los datos de la tabla
+        System.out.println( fbc.select() );
+        fbc.desconectar();
+        
     }
     
 }
