@@ -79,11 +79,7 @@
               <Color blue="d7" green="78" id="Text Highlight" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Crear cuenta"/>
-            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
-          <Events>
-            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblCrearCuentaMousePressed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jtfUsuario">
           <Properties>
@@ -108,9 +104,6 @@
               <Color id="Cursor de Texto"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnIniciarSesionMousePressed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblLogoGolden">
           <Properties>
