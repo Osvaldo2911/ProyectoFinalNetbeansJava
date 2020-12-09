@@ -12,7 +12,7 @@ public class SQLite_Conexion {
     private Connection connection = null;
     private ResultSet resultSet = null;
     private Statement statement = null;
-    private String db= "C:\\Users\\osval\\Documents\\Proyecto\\Java\\ProyectoFinal\\Hotel.db";    
+    private String db= "C:\\Users\\osval\\Documents\\NetBeansProjects\\ProyectoFinalNetbeansJava\\Hotel.db";    
 
 //Constructor de clase que se conecta a la base de datos SQLite 
     public SQLite_Conexion()
