@@ -16,12 +16,16 @@ public class Usuarios {
     private String ApellidoP;
     private String ApellidoM;
 
-    public Usuarios(String NombreUsuario, String Contraseña, String Nombre, String ApellidoP, String ApellidoM) {
+    public Usuarios(String NombreUsuario , String Nombre, String ApellidoP, String ApellidoM, String Contraseña) {
         this.NombreUsuario = NombreUsuario;
         this.Contraseña = Contraseña;
         this.Nombre = Nombre;
         this.ApellidoP = ApellidoP;
         this.ApellidoM = ApellidoM;
+    }
+
+    public Usuarios() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getNombreUsuario() {
