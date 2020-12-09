@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import Modelos.*;
 
 public class SQLite_Conexion {
 
@@ -27,19 +28,12 @@ public class SQLite_Conexion {
 
     }
 
- /* METODO PARA INSERTAR UN REGISTRO EN LA BASE DE DATOS
- * INPUT:
- table = Nombre de la tabla
- fields = String con los nombres de los campos donde insertar Ej.: campo1,campo2campo_n
- values = String con los datos de los campos a insertar Ej.: valor1, valor2, valor_n
- * OUTPUT:
- * Boolean
-*/
- public boolean insert(String table, String fields, String values)
-    {
+ /*METODO PARA INSERTAR UN REGISTRO EN LA BASE DE DATOS*/
+    
+ public boolean insertUsuario(Usuarios a){
         boolean res=false;
         //Se arma la consulta
-        String q=" INSERT INTO " + table + " ( " + fields + " ) VALUES ( " + values + " ) ";
+        String q = "insert into Usuarios Values('"+a.getNombreUsuario()+"','"+a.getNombre()+"','"+a.getApellidoP()+"','"+a.getApellidoM()+"','"+a.getContraseña()+"')";
         //se ejecuta la consulta
         try {
             PreparedStatement pstm = connection.prepareStatement(q);
@@ -51,20 +45,20 @@ public class SQLite_Conexion {
         }
       return res;
     }
+ 
 
  /* METODO PARA REALIZAR UNA CONSULTA A LA BASE DE DATOS
  * INPUT:
  * OUTPUT: String con los datos concatenados
 */
- public String select()
- {
-    String res=" ID | Nombre | Apellido \n ";
+ public String select(){
+    String res=" NombreUsuario | Nombre | ApellidoP | ApellidoM | Contraseña \n ";
     try {
       statement = connection.createStatement();
-      resultSet = statement.executeQuery("SELECT * FROM persona ; ");
+      resultSet = statement.executeQuery("SELECT * FROM Usuarios ; ");
       while (resultSet.next())
       {
-        res+=resultSet.getString("id") + " | " + resultSet.getString("nombre") + " | " +  resultSet.getString("apellido") + " \n ";
+        res+=resultSet.getString("NombreUsuario") + " | " + resultSet.getString("Nombre") + " | " +  resultSet.getString("ApellidoP") + " | " + resultSet.getString("ApellidoM") + " | " + resultSet.getString("Contraseña") +" \n ";
       }
      }
      catch (SQLException ex) {
