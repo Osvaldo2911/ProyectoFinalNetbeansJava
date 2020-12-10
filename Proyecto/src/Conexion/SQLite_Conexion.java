@@ -248,7 +248,7 @@ public class SQLite_Conexion {
        String res = "";
         try {
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT * FROM Usuarios ; ");
+            resultSet = statement.executeQuery("SELECT * FROM Usuarios; ");
             while (resultSet.next()) {
                 res += resultSet.getString("NombreUsuario") + " | " + resultSet.getString("Nombre") + " | " + resultSet.getString("ApellidoP") + " | " + resultSet.getString("ApellidoM") + " | " + resultSet.getString("Contraseña") + " \n ";
             }
