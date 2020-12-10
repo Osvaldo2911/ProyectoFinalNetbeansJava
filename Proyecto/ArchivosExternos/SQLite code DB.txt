@@ -1,0 +1,43 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE Usuarios (
+  NombreUsuario TEXT NOT NULL PRIMARY KEY,
+  Nombre TEXT NOT NULL,
+  ApellidoP TEXT NOT NULL,
+  ApellidoM TEXT NOT NULL,
+Contraseña TEXT NOT NULL);
+
+CREATE TABLE Habitaciones (
+  idHabitacion INTEGER NOT NULL PRIMARY KEY,
+  NumPersonas INTEGER NOT NULL,
+  Precio INTEGER NOT NULL,
+  TipoHabitacion TEXT NOT NULL);
+
+CREATE TABLE Clientes (
+  idClientes INTEGER NOT NULL PRIMARY KEY,
+  Nombre TEXT NOT NULL,
+  ApellidoPaterno TEXT NOT NULL,
+  ApellidoMaterno TEXT NOT NULL,
+  Telefono TEXT NOT NULL,
+  Direccion TEXT NOT NULL);
+
+CREATE TABLE Reservaciones (
+  idReservacion INTEGER NOT NULL PRIMARY KEY,
+  FechaEntrada TEXT NOT NULL,
+  FechaSalida TEXT NOT NULL,
+  NombreUsuarioR TEXT NOT NULL,
+  idClienteR INTEGER NOT NULL,
+  idHabitacionR INTEGER NOT NULL,
+  FOREIGN KEY (NombreUsuarioR) REFERENCES Usuarios (NombreUsuario),
+  FOREIGN KEY (idHabitacionR) REFERENCES Habitaciones (idHabitacion),
+  FOREIGN KEY (idClienteR) REFERENCES Clientes (idClientes));
+
+CREATE TABLE Actividades (
+  idReservacionA INTEGER NOT NULL ,
+  idUsuarioA TEXT NOT NULL,
+  idHabitacionA INTEGER NOT NULL,
+  idClienteA INTEGER NOT NULL,
+  FOREIGN KEY (idReservacionA) REFERENCES Reservaciones (idReservacion),
+  FOREIGN KEY (idUsuarioA) REFERENCES Usuarios (NombreUsuario),
+  FOREIGN KEY (idHabitacionA) REFERENCES Habitaciones (idHabitacion),
+  FOREIGN KEY (idClienteA) REFERENCES Clientes (idClientes));
