@@ -127,6 +127,9 @@ public class login extends javax.swing.JFrame {
             lblRetroalim.setText("¡Usuario o contraseña Incorrecta!");
         }else{
             lblRetroalim.setText("¡Bienvenido!");
+            Principal p = new Principal();
+            p.setVisible(true);
+            this.setVisible(false);
         }
     }//GEN-LAST:event_btnIniciarSesionActionPerformed
 
