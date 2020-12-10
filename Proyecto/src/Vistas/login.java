@@ -8,16 +8,12 @@ package Vistas;
 import java.awt.Color;
 import java.net.URL;
 import javax.swing.ImageIcon;
+import Conexion.SQLite_Conexion;
 
-/**
- *
- * @author osval
- */
 public class login extends javax.swing.JFrame {
 
-    /**
-     * Creates new form login
-     */
+    SQLite_Conexion a = new SQLite_Conexion();
+    
     public login() {
         initComponents();
         iconoEnBD();
@@ -43,6 +39,7 @@ public class login extends javax.swing.JFrame {
         jtfContraseña = new javax.swing.JTextField();
         btnIniciarSesion = new javax.swing.JButton();
         lblLogoGolden = new javax.swing.JLabel();
+        lblRetroalim = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,6 +50,11 @@ public class login extends javax.swing.JFrame {
 
         lblCrearCuenta.setForeground(java.awt.SystemColor.textHighlight);
         lblCrearCuenta.setText("Crear cuenta");
+        lblCrearCuenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblCrearCuentaMousePressed(evt);
+            }
+        });
 
         jtfUsuario.setText("Usuario");
         jtfUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -62,11 +64,18 @@ public class login extends javax.swing.JFrame {
 
         btnIniciarSesion.setText("Iniciar Sesion");
         btnIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIniciarSesionActionPerformed(evt);
+            }
+        });
 
         lblLogoGolden.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         lblLogoGolden.setForeground(new java.awt.Color(204, 204, 0));
         lblLogoGolden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblLogoGolden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/banner.png"))); // NOI18N
+
+        lblRetroalim.setText("jLabel1");
 
         javax.swing.GroupLayout jpbackLoginLayout = new javax.swing.GroupLayout(jpbackLogin);
         jpbackLogin.setLayout(jpbackLoginLayout);
@@ -74,26 +83,29 @@ public class login extends javax.swing.JFrame {
             jpbackLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpbackLoginLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(jpbackLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblLogoGolden, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCrearCuenta))
+                .addGroup(jpbackLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblLogoGolden, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                    .addComponent(jtfUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                    .addComponent(jtfContraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                    .addComponent(lblCrearCuenta)
+                    .addComponent(lblRetroalim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         jpbackLoginLayout.setVerticalGroup(
             jpbackLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpbackLoginLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblLogoGolden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblLogoGolden, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jtfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jtfContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(10, 10, 10)
+                .addComponent(lblRetroalim)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnIniciarSesion)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblCrearCuenta)
                 .addGap(30, 30, 30))
         );
@@ -105,6 +117,24 @@ public class login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
+        String Usuario = jtfUsuario.getText();
+        String Contraseña = jtfContraseña.getText();
+        a.buscarUsuario(Usuario,Contraseña);
+        String r = a.select();
+        if (r.equals("")) {
+            lblRetroalim.setText("¡Usuario o contraseña Incorrecta!");
+        }else{
+            lblRetroalim.setText("¡Bienvenido!");
+        }
+    }//GEN-LAST:event_btnIniciarSesionActionPerformed
+
+    private void lblCrearCuentaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCrearCuentaMousePressed
+      Registro r = new Registro();
+        r.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_lblCrearCuentaMousePressed
 
     /**
      * @param args the command line arguments
@@ -149,5 +179,6 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel lblCrearCuenta;
     private javax.swing.JLabel lblFondo;
     private javax.swing.JLabel lblLogoGolden;
+    private javax.swing.JLabel lblRetroalim;
     // End of variables declaration//GEN-END:variables
 }
